@@ -29,7 +29,11 @@ trait HtmxControllerTrait
         foreach ($blocks as $block) {
             /** @var TemplateWrapper $template */
             $template = $this->container->get('twig')->load($block->getTemplateFileName());
-            $content .= $template->renderBlock($block->getBlockName(), $block->getContext());
+            if ($block->getBlockName()) {
+                $content .= $template->renderBlock($block->getBlockName(), $block->getContext());
+            } else {
+                $content .= $template->render($block->getContext());
+            }
         }
 
         return new HtmxResponse($content);

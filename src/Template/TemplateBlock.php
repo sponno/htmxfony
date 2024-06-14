@@ -13,14 +13,11 @@ class TemplateBlock
 
     private $context;
 
-    public function __construct(
-        string $templateFileName,
-        string $blockName,
-        array $context = []
-    ) {
-        $this->context = $context;
-        $this->blockName = $blockName;
+    public function __construct(string $templateFileName, ?string $blockName = null, array $context = [])
+    {
         $this->templateFileName = $templateFileName;
+        $this->blockName = $blockName;
+        $this->context = $context;
     }
 
     public function getTemplateFileName(): string
@@ -28,7 +25,7 @@ class TemplateBlock
         return $this->templateFileName;
     }
 
-    public function getBlockName(): string
+    public function getBlockName(): ?string
     {
         return $this->blockName;
     }
