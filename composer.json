@@ -1,12 +1,17 @@
 {
-    "name": "tomcri/htmxfony",
+    "name": "sponno/htmxfony",
     "description": "Htmx SDK for Symfony",
     "type": "library",
+    "version": "dev-main",
     "license": "MIT",
     "authors": [
         {
             "name": "Cristian Toma",
             "email": "cristi@tom.ro"
+        },
+        {
+            "name": "John Ballinger",
+            "email": "john@bluespark.co.nz"
         }
     ],
     "require": {
