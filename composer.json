@@ -17,8 +17,8 @@
     "require": {
         "php": ">=7.1",
         "ext-json": "*",
-        "symfony/framework-bundle": "^5.4 || ^6.0 || ^7.0",
-        "symfony/twig-bundle": "^5.4 || ^6.0 || ^7.0"
+        "symfony/framework-bundle": "^5.4 || ^6.0 || ^7.0 || ^8.0",
+        "symfony/twig-bundle": "^5.4 || ^6.0 || ^7.0 || ^8.0"
     },
     "require-dev": {
         "phpunit/phpunit": "*",
